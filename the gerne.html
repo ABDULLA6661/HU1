@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>HOB</title>
+<meta http-equiv="refresh" content="1800">
+<style>
+    body{
+        background: linear-gradient(#5A639C,#9B86BD);
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+    }
+    .logo-container
+    {
+
+top: -70px;
+left: 7px;
+    }
+    .logo{
+        height:40px;
+       font-size: 200%;
+       font-weight: bold;
+       text-align: center;
+       margin: 100px auto;
+       width: 90px; 
+            padding: 20px;
+            background: linear-gradient(145deg, #5A639C, #E2BBE9);
+            box-shadow: 8px 8px 15px #ffffff, -8px -8px 15px #ffffff;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+
+        .logo span {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .logo span:hover {
+            transform: translateY(5px);
+    }
+
+  
+    @media(max-width:475px){}
+    @media(max-width:640px){}
+    @media(max-width:768px){}
+    @media(max-width:1024px){}
+    @media(max-width:1280px){}
+    @media(max-width:1536px){}
+    .stars, .stars:after {
+            position: absolute;
+            content: " ";
+            width: 2px;
+            height: 2px;
+            background: transparent;
+            box-shadow: 
+                10px 20px white,
+                50px 100px white,
+                80px 40px white,
+                130px 70px white,
+                160px 110px white,
+                200px 30px white,
+                220px 180px white,
+                300px 90px white,
+                340px 50px white,
+                400px 200px white,
+                450px 150px white,
+                500px 80px white,
+                560px 170px white,
+                600px 10px white,
+                650px 120px white,
+                700px 220px white,
+                750px 60px white,
+                800px 190px white,
+                850px 140px white,
+                900px 100px white,
+                950px 30px white,
+                1000px 180px white,
+                1050px 90px white,
+                1100px 50px white,
+                1150px 170px white,
+                1200px 200px white;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        .stars:after {
+            content: " ";
+            top: 200px;
+            left: 200px;
+            box-shadow: 
+                30px 30px white,
+                70px 150px white,
+                100px 60px white,
+                150px 130px white,
+                180px 90px white,
+                230px 180px white,
+                250px 40px white,
+                300px 150px white,
+                350px 60px white,
+                400px 20px white,
+                450px 170px white,
+                500px 100px white,
+                550px 30px white,
+                600px 160px white,
+                650px 200px white,
+                700px 50px white,
+                750px 120px white,
+                800px 190px white,
+                850px 90px white,
+                900px 10px white,
+                950px 140px white,
+                1000px 70px white,
+                1050px 200px white,
+                1100px 80px white,
+                1150px 30px white,
+                1200px 150px white;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.2;
+            }
+        }
+                .meteor {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+            opacity: 0;
+        }
+
+        .meteor:nth-child(1) {
+            top: 10%;
+            left: -10%;
+            animation: fly 5s linear infinite;
+            animation-delay: 0s;
+        }
+
+        .meteor:nth-child(2) {
+            top: 20%;
+            left: -20%;
+            animation: fly 5s linear infinite;
+            animation-delay: 10s;
+        }
+
+        @keyframes fly {
+            0% {
+                opacity: 1;
+                transform: translateX(0) translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(100vw) translateY(100vh);
+            }
+        }
+     
+.button1 {
+
+  cursor: pointer;
+  font-size: medium;
+  font-family: inherit;
+  font-weight: bold;
+  color: #0011ff;
+  background-color: #f8f8fd;
+  padding: 0.8em 2.2em;
+  border-radius: 50em;
+  border: 6px solid #8b93f8;
+  box-shadow: 0px 8px #1f35ff;
+  margin-left: 40px;
+ text-decoration: none;
+}
+.button1:active {
+  position: relative;
+  top: 8px;
+  border: 6px solid #646fff;
+  box-shadow: 0px 0px;
+}
+.button2 {
+    
+  cursor: pointer;
+  font-size: medium;
+  font-family: inherit;
+  font-weight: bold;
+  color: #0011ff;
+  background-color: #f8f8fd;
+  padding: 0.8em 2.2em;
+  border-radius: 50em;
+  border: 6px solid #8b93f8;
+  box-shadow: 0px 8px #1f35ff;
+  margin-top: opx;
+  margin-left: 40px;
+  text-decoration: none;
+ 
+}
+.button2:active {
+  position: relative;
+  top: 8px;
+  border: 6px solid #646fff;
+  box-shadow: 0px 0px;
+}
+.button3 {
+    margin:-2000px;
+  cursor: pointer;
+  font-size: medium;
+  font-family: inherit;
+  font-weight: bold;
+  color: #0011ff;
+  background-color: #f8f8fd;
+  padding: 0.8em 2.2em;
+  border-radius: 50em;
+  border: 6px solid #8b93f8;
+  box-shadow: 0px 8px #1f35ff;
+  margin-top: 50px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.button3:active {
+  position: relative;
+  top: 8px;
+  border: 6px solid #646fff;
+  box-shadow: 0px 0px;
+}
+.button4 {
+  display: flex;
+  cursor: pointer;
+  font-size: medium;
+  font-family: inherit;
+  font-weight: bold;
+  color: #0011ff;
+  background-color: #f8f8fd;
+  padding:  10px;
+  border-radius: 50em;
+  border: 6px solid #8b93f8;
+  box-shadow: 0px 8px #1f35ff;
+  text-decoration: none;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100px;
+  transform: translateY(-40px);
+  transform: translateX(1300px);
+
+}
+.button4:active {
+  position: relative;
+  top: 8px;
+  border: 6px solid #646fff;
+  box-shadow: 0px 0px;
+}
+.button5 {
+    margin:0px;
+  cursor: pointer;
+  font-size: medium;
+  font-family: inherit;
+  font-weight: bold;
+  color: #0011ff;
+  background-color: #f8f8fd;
+  padding: 0.8em 2.2em;
+  border-radius: 50em;
+  border: 6px solid #8b93f8;
+  box-shadow: 0px 8px #1f35ff;
+  margin-top: 500px;
+  margin-left: 40px;
+  
+  text-decoration: none;
+
+}
+.button5:active {
+  position: relative;
+  top: 8px;
+  border: 6px solid #646fff;
+  box-shadow: 0px 0px;
+}
+
+.tt{margin-left: 400px;
+.card {
+ --background: linear-gradient(to left, #1f35ff 0%, #f8f8fd 100%);
+ width: 190px;
+ height: 254px;
+ padding: 5px;
+ border-radius: 1rem;
+ overflow: visible;
+ background: #9000ff;
+ background: var(--background);
+ position: relative;
+ z-index: 1;
+}
+
+.card::after {
+ position: absolute;
+ content: "";
+ top: 30px;
+ left: 0;
+ right: 0;
+ z-index: -1;
+ height: 100%;
+ width: 100%;
+ transform: scale(0.8);
+ filter: blur(25px);
+ background: #ff0000;
+ background: var(--background);
+ transition: opacity .5s;
+}
+
+.card-info {
+ --color: rgb(0, 0, 0);
+ background: var(--color);
+ color: var(--color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+ overflow: visible;
+ border-radius: .7rem;
+}
+
+.card .title {
+ font-weight: bold;
+ letter-spacing: .1em;
+}
+
+/*Hover*/
+.card:hover::after {
+ opacity: 0;
+}
+
+.card:hover .card-info {
+ color: #0011ff;
+ transition: color 1s;
+}
+margin-top: -500px;
+}
+
+   
+</style>
+</head>
+<body>
+
+    <div class="logo-container">
+    <div class="logo">
+      <span>H</span> 
+      <span>O</span>
+      <span>B</span>
+
+    </div>
+   
+</div>
+<div class="stars"></div>
+<div class="meteor"></div>
+<div class="meteor"></div>
+
+<a href="web.pdf" class="button4">pdf</a>
+<br><br><br><br>
+<a href="نوارة 22.html" class="button1">sport</a>
+<br><br><br><br>
+<a href="soso.html" class="button2">Elegance fashion store</a>
+<br><br><br><br>
+<a href="at.html" class="button3">movie Suggestions</a>
+<br><br><br><br>
+
+<a href="teba.html" class="button5">PHOTOGRAPHER</a>
+<div class="tt">
+  <h3>لقد قمت بإنشاء موقع يهدف إلى تسليط الضوء على الإسهامات الشخصية والهوايات لكل فرد شارك في هذا المشروع. يتيح الموقع<br> للزوار استكشاف صفحات مخصصة لكل مشارك تعرض لمساته الفريدة وهواياته الشخصية، مما يعزز التواصل والتفاعل بين المستخدمين</h3>
+<div class="card">
+  <div class="card-info">
+    <p class="title">We hope you like it </p>
+  </div>
+</div>
+</div>
+</body>
+</html>
